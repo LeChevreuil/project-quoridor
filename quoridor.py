@@ -65,7 +65,6 @@ def formater_jeu(etat_jeu):
 def formater_les_parties(list_parties):
     ligne = []
     count = 1
-    print(list_parties)
     for partie in list_parties:
         temp = str(count) + (" : " if count <= 9 else ": ") + partie["date"] + ", " + partie["joueurs"][0] + " vs " + partie["joueurs"][1]
         temp += ", gagnant: " + partie["gagnant"] if partie["gagnant"] is not None else ""

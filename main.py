@@ -1,7 +1,7 @@
 import quoridor
 import api
 
-# Point d'entree
+#Point d'entree
 quoridor.analyser_commande()
 
 DEBUG = {
@@ -32,5 +32,3 @@ PARTIE = [
 
 print(quoridor.formater_jeu(DEBUG))
 print(quoridor.formater_les_parties(PARTIE))
-
-print(api.lister_parties())

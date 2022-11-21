@@ -22,7 +22,6 @@ def debuter_partie():
     res = requests.post("partie", auth=("VIBER138", "3beef511-3eb3-40bd-b170-bba3488d0c9b"))
 
     
-
 def jouer_coup(id_partie, type_coup, position, idul, secret):
     res = requests.put("jouer", auth=("VIBER138", "3beef511-3eb3-40bd-b170-bba3488d0c9b"), data={
         "id_partie": id_partie,
